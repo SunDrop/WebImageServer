@@ -1,0 +1,10 @@
+#ifndef WEBIMAGESERVER_WEBIMAGESERVER_H
+#define WEBIMAGESERVER_WEBIMAGESERVER_H
+
+namespace wis {
+    class WebImageServer {
+
+    };
+}
+
+#endif //WEBIMAGESERVER_WEBIMAGESERVER_H
