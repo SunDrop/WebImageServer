@@ -7,6 +7,5 @@ namespace wis {
     class File {
         virtual std::fstream getStream() = 0;
     };
-
 }
 #endif //WEBIMAGESERVER_FILE_H

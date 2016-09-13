@@ -3,5 +3,13 @@ project(WebImageServer)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp wis/WebImageServer.cpp wis/WebImageServer.h wis/File.cpp wis/File.h wis/LocalFile.cpp wis/LocalFile.h)
+set(SOURCE_FILES
+    wis/File.h
+    wis/LocalFile.cpp
+    wis/LocalFile.h
+    wis/WebImageServer.cpp
+    wis/WebImageServer.h
+    CMakeLists.txt
+    main.cpp wis/Request.cpp wis/Request.h wis/Response.cpp wis/Response.h wis/Command.h wis/ResizeCommand.cpp wis/ResizeCommand.h wis/RotateCommand.cpp wis/RotateCommand.h wis/ImageProcessor.cpp wis/ImageProcessor.h)
+
 add_executable(WebImageServer ${SOURCE_FILES})

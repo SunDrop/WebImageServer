@@ -1,5 +1,13 @@
 #include "LocalFile.h"
 
-std::fstream wis::LocalFile::getStream() {
-    return nullptr;
+namespace wis {
+    std::fstream LocalFile::getStream() {
+        return nullptr; // TODO: implement it
+    }
+
+    LocalFile::LocalFile(const std::string &fileName) : fileName(fileName) {} // TODO: open file
+
+    LocalFile::~LocalFile() {
+        // TODO: close file
+    }
 }
