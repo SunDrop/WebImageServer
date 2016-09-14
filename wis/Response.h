@@ -1,18 +1,15 @@
 #ifndef WEBIMAGESERVER_RESPONSE_H
 #define WEBIMAGESERVER_RESPONSE_H
 
+#include <vector>
 #include "File.h"
 
 namespace wis {
     class Response {
     private:
-        File* files;
+        std::vector<File> files;
     public:
-        Response();
-
         void send() throw();
-
-        virtual ~Response();
     };
 }
 

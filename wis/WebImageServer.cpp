@@ -2,7 +2,6 @@
 #include "ImageProcessor.h"
 #include "LocalFile.h"
 #include "ResizeCommand.h"
-#include "RotateCommand.h"
 
 namespace wis {
     void WebImageServer::processQuery() {

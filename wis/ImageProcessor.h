@@ -12,7 +12,9 @@ namespace wis {
         std::vector<Command> commands;
     public:
         void setFile(File file);
+
         void appendCommand(Command);
+
         File process();
     };
 }
