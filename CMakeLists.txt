@@ -15,12 +15,15 @@ set(SOURCE_FILES
         wis/Request.h
         wis/Response.cpp
         wis/Response.h
-        wis/Command.h
-        wis/ResizeCommand.cpp
-        wis/ResizeCommand.h
-        wis/RotateCommand.cpp
-        wis/RotateCommand.h
+        wis/command/ICommand.h
+        wis/command/FileCommand.cpp
+        wis/command/FileCommand.h
+        wis/command/ResizeCommand.cpp
+        wis/command/ResizeCommand.h
+        wis/command/RotateCommand.cpp
+        wis/command/RotateCommand.h
         wis/ImageProcessor.cpp
-        wis/ImageProcessor.h)
+        wis/ImageProcessor.h
+        )
 
 add_executable(WebImageServer ${SOURCE_FILES})

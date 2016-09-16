@@ -1,5 +1,4 @@
-#ifndef WEBIMAGESERVER_LOCALFILE_H
-#define WEBIMAGESERVER_LOCALFILE_H
+#pragma once
 
 #include "File.h"
 
@@ -13,7 +12,8 @@ namespace wis {
         virtual ~LocalFile();
 
         virtual std::fstream getStream() override;
+
+    private:
+        bool fileExist();
     };
 }
-
-#endif //WEBIMAGESERVER_LOCALFILE_H

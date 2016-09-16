@@ -1,5 +1,4 @@
-#ifndef WEBIMAGESERVER_REQUEST_H
-#define WEBIMAGESERVER_REQUEST_H
+#pragma once
 
 #include <utility>
 #include <string>
@@ -18,5 +17,3 @@ namespace wis {
         std::string getFileName();
     };
 }
-
-#endif //WEBIMAGESERVER_REQUEST_H

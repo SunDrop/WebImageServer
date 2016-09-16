@@ -1,5 +1,4 @@
-#ifndef WEBIMAGESERVER_WEBIMAGESERVER_H
-#define WEBIMAGESERVER_WEBIMAGESERVER_H
+#pragma once
 
 #include "Request.h"
 #include "Response.h"
@@ -13,5 +12,3 @@ namespace wis {
         void processQuery();
     };
 }
-
-#endif //WEBIMAGESERVER_WEBIMAGESERVER_H

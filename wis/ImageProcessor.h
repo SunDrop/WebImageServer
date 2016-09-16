@@ -1,22 +1,19 @@
-#ifndef WEBIMAGESERVER_IMAGEPROCESSOR_H
-#define WEBIMAGESERVER_IMAGEPROCESSOR_H
+#pragma once
 
 #include <vector>
 #include "File.h"
-#include "Command.h"
+#include "command/ICommand.h"
 
 namespace wis {
     class ImageProcessor {
     private:
-        File file;
-        std::vector<Command> commands;
+        File* file;
+        std::vector<ICommand*> commands;
     public:
-        void setFile(File file);
+        void setFile(File* file);
 
-        void appendCommand(Command);
+        void appendCommand(ICommand* command);
 
-        File process();
+        File* process();
     };
 }
-
-#endif //WEBIMAGESERVER_IMAGEPROCESSOR_H

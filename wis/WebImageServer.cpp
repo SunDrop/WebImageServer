@@ -1,7 +1,7 @@
 #include "WebImageServer.h"
 #include "ImageProcessor.h"
 #include "LocalFile.h"
-#include "ResizeCommand.h"
+#include "command/ResizeCommand.h"
 
 namespace wis {
     void WebImageServer::processQuery() {

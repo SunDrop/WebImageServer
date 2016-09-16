@@ -1,5 +1,4 @@
-#ifndef WEBIMAGESERVER_RESPONSE_H
-#define WEBIMAGESERVER_RESPONSE_H
+#pragma once
 
 #include <vector>
 #include "File.h"
@@ -12,5 +11,3 @@ namespace wis {
         void send() throw();
     };
 }
-
-#endif //WEBIMAGESERVER_RESPONSE_H

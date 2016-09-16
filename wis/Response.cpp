@@ -1,7 +1,7 @@
 #include "Response.h"
 
 namespace wis {
-    void Response::send() {
+    void Response::send() throw() {
         // TODO: send files
     }
 }

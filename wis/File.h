@@ -1,5 +1,4 @@
-#ifndef WEBIMAGESERVER_FILE_H
-#define WEBIMAGESERVER_FILE_H
+#pragma once
 
 #include <fstream>
 
@@ -8,4 +7,3 @@ namespace wis {
         virtual std::fstream getStream() = 0;
     };
 }
-#endif //WEBIMAGESERVER_FILE_H
