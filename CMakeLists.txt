@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(SOURCE_FILES
         CMakeLists.txt
         main.cpp
+        /usr/include/evhttp.h
         wis/File.h
         wis/LocalFile.cpp
         wis/LocalFile.h

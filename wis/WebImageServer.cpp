@@ -5,10 +5,12 @@
 
 namespace wis {
     void WebImageServer::processQuery() {
-        // TODO: implement it
         ImageProcessor imageProcessor;
-        imageProcessor.setFile(LocalFile(request.getFileName()));
-        imageProcessor.appendCommand(ResizeCommand());
-        File output = imageProcessor.process();
+        const std::string &filename = request.getFileName();
+        LocalFile file = LocalFile(filename);
+        imageProcessor.setFile(&file);
+        ResizeCommand command = ResizeCommand();
+        imageProcessor.appendCommand(&command);
+        File *pFile = imageProcessor.process();
     }
 }
