@@ -1,7 +1,13 @@
 #include "FileCommand.h"
-namespace wis {
 
-    void FileCommand::setFile(File *file) {
-        this->file = file;
+namespace wis {
+    namespace cmd {
+        void FileCommand::setFile(File *file) {
+            this->file = file;
+        }
+
+        File *FileCommand::getFile() {
+            return file;
+        }
     }
 }

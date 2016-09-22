@@ -5,8 +5,10 @@
 #include "FileCommand.h"
 
 namespace wis {
-    class RotateCommand : private FileCommand, public ICommand {
-    public:
-        virtual void execute() override;
-    };
+    namespace cmd {
+        class RotateCommand : private FileCommand, public ICommand {
+        public:
+            virtual void execute() override;
+        };
+    }
 }

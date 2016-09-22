@@ -2,18 +2,18 @@
 
 #include <vector>
 #include "File.h"
-#include "command/ICommand.h"
+#include "command/FileCommand.h"
 
 namespace wis {
     class ImageProcessor {
     private:
-        File* file;
-        std::vector<ICommand*> commands;
+        File *file;
+        std::vector<cmd::FileCommand *> commands;
     public:
-        void setFile(File* file);
+        void setFile(File *file);
 
-        void appendCommand(ICommand* command);
+        void appendCommand(cmd::FileCommand *command);
 
-        File* process();
+        File *process();
     };
 }

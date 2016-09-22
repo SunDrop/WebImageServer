@@ -5,8 +5,10 @@
 #include "../File.h"
 
 namespace wis {
-    class ResizeCommand : private FileCommand, public ICommand {
-    public:
-        virtual void execute() override;
-    };
+    namespace cmd {
+        class ResizeCommand : private FileCommand, public ICommand {
+        public:
+            virtual void execute() override;
+        };
+    }
 }

@@ -1,7 +1,10 @@
 #pragma once
 
 namespace wis {
-    class ICommand {
-        virtual void execute() = 0;
-    };
+    namespace cmd {
+        class ICommand {
+        public:
+            virtual void execute() = 0;
+        };
+    }
 }

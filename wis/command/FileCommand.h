@@ -1,12 +1,16 @@
 #pragma once
 
 #include "../File.h"
+#include "ICommand.h"
 
 namespace wis {
-    class FileCommand {
-    private:
-        File *file;
-    public:
-        void setFile(File *file);
-    };
+    namespace cmd {
+        class FileCommand : public ICommand {
+        private:
+            File *file;
+        public:
+            void setFile(File *file);
+            File* getFile();
+        };
+    }
 }

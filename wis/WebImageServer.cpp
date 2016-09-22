@@ -9,7 +9,7 @@ namespace wis {
         const std::string &filename = request.getFileName();
         LocalFile file = LocalFile(filename);
         imageProcessor.setFile(&file);
-        ResizeCommand command = ResizeCommand();
+        cmd::ResizeCommand command = cmd::ResizeCommand();
         imageProcessor.appendCommand(&command);
         File *pFile = imageProcessor.process();
     }

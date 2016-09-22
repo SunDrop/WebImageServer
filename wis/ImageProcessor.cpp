@@ -7,13 +7,20 @@ namespace wis {
         this->file = file;
     }
 
-    File* ImageProcessor::process() {
-        // TODO: implement it
-        return nullptr;
+    File *ImageProcessor::process() {
+        if (!file) {
+            throw std::logic_error("File not set");
+        }
+
+        for (auto &command : commands) {
+            command->setFile(file);
+            command->execute();
+        }
+
+        return file;
     }
 
-    void ImageProcessor::appendCommand(ICommand *command) {
+    void ImageProcessor::appendCommand(cmd::FileCommand *command) {
         commands.push_back(command);
-
     }
 }
