@@ -4,6 +4,6 @@
 
 namespace wis {
     class File {
-        virtual std::fstream getStream() = 0;
+        virtual std::fstream* getStream() = 0;
     };
 }
